@@ -1,13 +1,281 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+.back{
+    height: 2300px;
+}
+.dark{
+    background-color: #373737;
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+.light{
+    color: #6809E1;
+    border-color: #6809E1;
+}
+.header{
+    width: 100%;
+}
+.line{
+    background-color: #6809E1;
+    height: 6px;
+    width: 100%;
+}
+.container-icon-btn{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 26px;
+}
+.container-icon-btn img{
+    width: 59px;
+}
+.container-icon-btn button{
+    border: 1px solid;
+    border-radius: 61px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 43px;
+    width: 148px;
+    cursor: pointer;
+}
+/* --------------Filter---------------------- */
+.container-filter{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    width: 100%;
+}
+.title-filter-dark{
+    color: #f2f2f2;
+    font-size: 36px;
+    font-weight: 400;
+}
+.title-filter-light{
+    color: #6809E1;
+    font-size: 36px;
+    font-weight: 400;
+}
+.bold{
+    font-weight: 700;
+}
+.container-filter img{
+    width: 399px;
+}
+form{
+    display: flex;
+}
+.filter-input-light{
+    border-color: #121212;
+}
+.filter-input-dark{
+    border-color: #f2f2f2;
+}
+form input{
+    border: 1px solid;
+    border-radius: 61px 0 0 61px;
+    padding-left: 20px;
+    font-size: 18px;
+    height: 52px;
+    width: 456px;
+}
+.container-input-img{
+    align-items: center;
+    background-color: #572EE5;
+    cursor: pointer;
+    border: 1px solid ;
+    display: flex;
+    border-radius: 0 61px 61px 0;
+    justify-content: center;
+    width: 86px;
+}
+.container-input-img img{
+    width: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ---------------------AutoComplete------------------- */
+.container-autoComplete{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.autoComplete-dark{
+    background-color: #5a5a5a;
+    border: 1px solid #f2f2f2;
+}
+.autoComplete-light{
+    background-color: #cecece;
+    border: 1px solid #572EE5;
+}
+.autoComplete{
+    border-radius: 40px;
+    list-style: none;
+    width: 570px;
+    overflow: hidden;
+}
+.suggestions{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px 0 14px 26px;
+    cursor: pointer;
+}
+.suggestions-dark{
+    border: 0.1px solid #f2f2f2;
+}
+.suggestions-light{
+    border: 0.1px solid #572EE5;
+}
+/* -----------------------Gifs Reps------------------------ */
+
+.container-gifsResp{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 79px;
+    width: 100%;
+}
+.container-gifsResp-title-dark{
+    color: #f2f2f2;
+    font-size: 24px;
+}
+.container-gifsResp-title-light{
+    color: #572EE5;
+    font-size: 24px;
+}
+.container-gifs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+
+}
+.container-gifs img{
+    border-radius: 15px;
+    height: 250px;
+    margin: 55px 0 41px 0;
+    width: 250px;
+}
+.container-gifs img:hover{
+    cursor: pointer;
+    box-shadow: -2px 5px 13px 4px rgba(0,0,0,0.5);
+    transform: scale(1.03);
+    transition: 0.1s;
+}
+/* --------------------------- loading ----------------------------- */
+.loading-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ------------------------------ GifsEmpty--------------------------------- */
+
+.container-gifs-empyt{
+    align-items: center;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    width: 100%;
+}
+.container-gifs-empyt img{
+    padding-right: 40px;
+    width: 600px;
+}
+.container-gifs-empyt h3{
+    font-size: 26px;
+    width: 300px;
+}
+.container-gifs-empyt span{
+    font-size: 30px;
+}
+.light-losiento{
+   color: #6809E1; 
+}
+
+/* -------------------------Responsive---------------------------------- */
+@media screen and (max-width: 650px){
+    .container-icon-btn{
+        margin-top: 16px;
+    }
+    .container-icon-btn img{
+        width: 39px;
+    }
+    .container-icon-btn button{
+        font-size: 10px;
+        height: 33px;
+        width: 98px;
+
+    }
+/* --------------Filter---------------------- */
+    .container-filter{
+        margin-top: 25px;
+    }
+    .title-filter-light{
+        font-size: 18px;
+    }
+    .title-filter-dark{
+        font-size: 18px;
+    }
+    .container-filter > img{
+        width: 75%;
+    }
+    form input{
+        height: 42px;
+        width: 100%;
+    }
+    .container-input-img{
+        width: 35%;
+    }
+    
+/* ---------------------AutoComplete------------------- */
+    .container-autoCompletee{
+        width: 85%;
+    }
+    .autoComplete{
+        width: 350px;
+    }
+/* -----------------------Gifs Reps------------------------ */
+    .container-gifsResp{
+        margin-top: 29px;
+    }
+    .container-gifs{
+        width: 95%;
+    }
+    .container-gifs img{
+        width: 150px;
+        height: 150px ;
+        margin: 10px 0 10px 0;
+    }
+/* --------------------------- loading ----------------------------- */
+    .loading-img img{
+        width: 85%;
+    }
+    
+/* ------------------------------ GifsEmpty--------------------------------- */
+    .container-gifs-empyt{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .container-gifs-empyt img{
+        width: 300px;
+        padding: 0;
+    }
+    .container-gifs-empyt h3{
+        font-size: 20px;
+        width: 320px;
+    }
+    .container-gifs-empyt span{
+        font-size: 20px;
+    }
 }
