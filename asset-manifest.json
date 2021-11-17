@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Gifos-App/static/css/main.9c3c7abc.chunk.css",
+    "main.js": "/Gifos-App/static/js/main.b5786a8f.chunk.js",
+    "main.js.map": "/Gifos-App/static/js/main.b5786a8f.chunk.js.map",
+    "runtime-main.js": "/Gifos-App/static/js/runtime-main.75e4c6c0.js",
+    "runtime-main.js.map": "/Gifos-App/static/js/runtime-main.75e4c6c0.js.map",
+    "static/js/2.2970aa60.chunk.js": "/Gifos-App/static/js/2.2970aa60.chunk.js",
+    "static/js/2.2970aa60.chunk.js.map": "/Gifos-App/static/js/2.2970aa60.chunk.js.map",
+    "index.html": "/Gifos-App/index.html",
+    "static/css/main.9c3c7abc.chunk.css.map": "/Gifos-App/static/css/main.9c3c7abc.chunk.css.map",
+    "static/js/2.2970aa60.chunk.js.LICENSE.txt": "/Gifos-App/static/js/2.2970aa60.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75e4c6c0.js",
+    "static/js/2.2970aa60.chunk.js",
+    "static/css/main.9c3c7abc.chunk.css",
+    "static/js/main.b5786a8f.chunk.js"
+  ]
+}
